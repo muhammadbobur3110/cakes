@@ -1,0 +1,233 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bad Script', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fbebea;
+  color: #222;
+  background-image: url("../img/4-layers.png");
+  background-position: calc(50% + 160px) 140px;
+  background-repeat: no-repeat;
+  background-size: 1168 auto;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
+
+.site-header {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 105px 0px;
+}
+
+.site-header__container {
+  align-items: center;
+  display: flex;
+}
+
+.site-header__logo {
+  margin-right: auto;
+  text-decoration: none;
+  padding: 0;
+  display: block;
+}
+
+.logo {
+  display: block;
+  width: 67px;
+  height: 18px;
+}
+
+.sitenav {
+  display: flex;
+  margin-right: 300px;
+}
+
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.sitenav__item {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: #2d2829;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  padding: 0;
+}
+
+.sitenav__link:hover,
+.sitenav__link:active {
+  color: #f50049;
+}
+
+.site-header__tel--link {
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  color: #2d2829;
+  font-family: Circe;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 39.53px;
+}
+
+.intro-section__title {
+  margin: 0;
+  margin-top: 100px;
+  width: 353px;
+  color: #2e2829;
+  font-family: "Playfair Display";
+  font-size: 78px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 70px;
+}
+
+.intro-section__text {
+  font-family: "Bad Script";
+  font-size: 41px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 77.95px;
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 58px;
+  color: #32313d;
+}
+
+.intro-section__link {
+  width: 93px;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26.73px;
+  padding: 21px 67px;
+  background-color: #f50049;
+  border-radius: 26px;
+  text-decoration: none;
+}
+
+.intro-section__ingradients {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.ingradients__ingredient {
+  display: flex;
+  align-items: center;
+  width: 82px;
+  margin-left: 10px;
+  color: #000000;
+  font-family: Circe;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+}
+
+.ingradients__ingredient::before {
+  background-image: url("../img/иконка_ингредиенты.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  display: block;
+  min-width: 55px;
+  height: 55px;
+  content: "";
+  margin-right: 16px;
+}
+
+.ingradients__delivery {
+  display: flex;
+  align-items: center;
+  width: 212px;
+  margin-left: 141px;
+  color: #000000;
+  font-family: Circe;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+}
+
+.ingradients__delivery::before {
+  background-image: url("../img/иконка_доставка.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  display: block;
+  width: 65px;
+  height: 65px;
+  content: "";
+  margin-right: 16px;
+}
