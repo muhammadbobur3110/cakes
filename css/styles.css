@@ -22,7 +22,7 @@ body {
   background-position: calc(50% + 160px) 140px;
   background-repeat: no-repeat;
   background-size: 1168 auto;
-
+  overflow-x: hidden;
 }
 
 img {
@@ -63,7 +63,7 @@ only screen and (                min-resolution: 2dppx) {
 .site-header {
   margin-left: auto;
   margin-right: auto;
-  padding: 105px 0px;
+  padding: 80px 0px;
 }
 
 .site-header__container {
@@ -130,7 +130,7 @@ only screen and (                min-resolution: 2dppx) {
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 39.53px;
+  line-height: 39px;
 }
 
 .intro-section__title {
@@ -209,7 +209,7 @@ only screen and (                min-resolution: 2dppx) {
 .ingradients__delivery {
   display: flex;
   align-items: center;
-  width: 212px;
+  width: 215px;
   margin-left: 141px;
   color: #000000;
   font-family: Circe;
@@ -226,8 +226,380 @@ only screen and (                min-resolution: 2dppx) {
   background-position: left center;
   background-size: contain;
   display: block;
-  width: 65px;
-  height: 65px;
+  min-width: 54px;
+  min-height: 54px;
   content: "";
   margin-right: 16px;
+}
+
+.reviews {
+  margin-top: 300px;
+  margin-bottom: 190px;
+  background-image: url("../img/2-layers.png");
+  background-repeat: no-repeat;
+  background-size: 1495px auto;
+  background-position: center top;
+  min-width: 1495px;
+  min-height: 149px;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  padding-top: 117px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 65px;
+}
+
+.box {
+  display: flex;
+  width: 700px;
+  margin-left: 285px;
+  margin-right: auto;
+}
+
+.box::before {
+  background-image: url("../img/Layer_12.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+  content: "";
+  display: block;
+}
+
+.reviews__item {
+  width: 400px;
+  margin-left:54px;
+}
+
+.reviews__name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2d2829;
+  font-family: "Open Sans";
+  font-size: 27px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.reviews__age {
+  margin-top: 0;
+  margin-bottom: 27px;
+  color: #2d2829;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.reviews__quote {
+  margin: 0;
+  margin-bottom: 14px;
+  color: #2d2829;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.expand-button {
+  text-decoration: underline;
+  color: #f50049;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  border: 0;
+  background: transparent;
+  outline: 0;
+}
+
+.reviews__span {
+  min-width: 31px;
+  opacity: 0.7;
+  color: #f50049;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+}
+
+.reviews__number {
+  margin: 0;
+  text-align: right;
+}
+
+.about-us__description {
+  width: 552px;
+  margin-right: 82px;
+}
+
+.about-us__title {
+  color: #2d2829;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 33px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.about-us__subtitle {
+  color: #32313d;
+  font-family: "Bad Script";
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 77px;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.about-us__mini-title {
+  color: #2d2829;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  margin: 0;
+}
+
+.mini-title__title {
+  margin-top: 26px;
+}
+
+.about-us__text {
+  color: #2d2829;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin: 0;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  min-width: 150px;
+}
+
+.list__item + .list__item {
+  margin-left: 17px;
+}
+
+.list__link {
+  background-color: #fff;
+  padding: 9px;
+  border-radius: 50%;
+  display: block;
+  align-items: center;
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__container::after {
+  background-image: url("../img/фото.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 509px;
+  height: 510px;
+  display: block;
+  content: "";
+  border-radius: 50%;
+}
+
+.contact {
+  margin-top: 82px;
+}
+
+.contact__inner {
+  display: flex;
+}
+
+.contact__form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 85px;
+}
+
+.contact__title {
+  color: #2d2829;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 65.96px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.contact__text {
+  color: #32313d;
+  font-family: "Bad Script";
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 77.95px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact__form-text {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.contact__form-input {
+  width: 570px;
+  padding-top: 40px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  opacity: 0.2;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact__form-button {
+  width: 180px;
+  color: #fefefe;
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  background-color: #f50049;
+  padding: 16px 45px;
+  border: 0;
+  outline: 0;
+  border-radius: 26px;
+  margin-top: 80px;
+}
+
+.right-wrapper {
+  max-width: 320px;
+}
+
+.right-wrapper__tel-number {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin: 0;
+}
+
+.tel-number__link {
+  text-decoration: none;
+  padding: 0;
+  display: block;
+  white-space: nowrap;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.right-wrapper__email-link {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.email-link__link {
+  text-decoration: none;
+  padding: 0;
+  display: block;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.right-wrapper__media {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.right-wrapper__media-list {
+  width: 160px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.item__link {
+  background-color: #fff;
+  padding: 9px;
+  border-radius: 50%;
+  display: block;
+  align-items: center;
 }
