@@ -442,6 +442,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .contact {
   margin-top: 82px;
+  padding-bottom: 300px;
+  background-image: url("../img/strawberry.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 240px) bottom;
+  background-size: 954px auto;
 }
 
 .contact__inner {
